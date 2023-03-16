@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --english-violet: #533A71;
+    --glaucous: #6184D8;
+    --verdigris: #50C5B7;
+    --white-smoke: #f5f5f5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: azure;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+    width: 600px;
+}
+h1.logo{
+    font-size: 3rem;
+    color: var(--english-violet);
+    margin-top: 2rem;
+}
+
+main h2{
+    width: -moz-fit-content;
+    width: fit-content;
+    color: var(--english-violet);
+    font-size: 2rem;
+    text-transform: capitalize;
+    border-bottom: 4px solid var(--glaucous);
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+main > p {
+    font-size: 1.6rem;
+    margin: 20px 20px;
+    color: palevioletred;
+}
+
+form#paymentForm{
+    width: 90%;
+    border: 2px solid var(--glaucous);
+    margin: 20px;
+    padding: 40px;
+}
+
+.input-group{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: flex-end;
+}
+.error-message{
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: palevioletred;
+}
+.input-group > label {
+    font-size: 1.6rem;
+    color: var(--english-violet);
+    width: 30%;
+}
+
+.input-group > input{
+    height: 3.5rem;
+    width: 70%;
+    border: 1px solid var(--verdigris);
+    transition: border .5s ease-in;
+    padding-left: .5rem;
+}
+
+.input-group > input:is(:hover, :focus){
+    border: 1px solid var(--glaucous);
+}
+
+.radio-group{
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+    color: var(--glaucous);
+    gap: 1rem;
+}
+
+#paymentForm > .submit-button {
+    padding: 10px;
+    width: 38%;
+    outline: none;
+    background: linear-gradient(to right, var(--verdigris), var(--glaucous));
+    cursor: pointer;
+    color: var(--white-smoke);
+    border: none;
+    margin: 0px auto;
+}
+
+.submit-button ::hover {
+    cursor: pointer;
+}

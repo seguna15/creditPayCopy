@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creditPay</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <header>
+        <h1 class="logo">CreditPay!</h1>
+     </header>
+
+     <main>
+        <h2>Complete your transaction by paying!</h2>
+        <form action="" id="paymentForm">
+            <small class="error-message" id="email-error"></small>
+            <div class="input-group">
+                <label for="pay-mail">Email:</label> 
+                <input type="email" placeholder="eg: yourname@gmail.com" id="pay-mail" class="pay-mail">
+            </div>
+            <small class="error-message" id="otp-error"></small>
+            <div class="input-group">
+                <label for="pay-otp">OTP:</label>
+                <input type="password" placeholder="eg:000000" id="pay-otp" class="pay-otp">
+            </div>
+        
+            <button type="submit" class="submit-button">Pay</button>
+        </form>
+     </main>
+
+     <footer>
+
+     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"
+        integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="./pay.js"></script>
+</body>
+</html>

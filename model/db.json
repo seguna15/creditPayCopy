@@ -1,0 +1,22 @@
+[
+    {
+        "email": "seguna15@gmail.com",
+        "cardType": "Master Card",
+        "cardNumber": "6575645342353575",
+        "cardPin": "6754",
+        "expiryDate": "09/23",
+        "cvv": "564",
+        "otp": "674244"
+    },
+    {
+        "email": "seguna15@live.co.uk",
+        "cardType": "Verve",
+        "cardNumber": "6575645342353575",
+        "cardPin": "4564",
+        "expiryDate": "10/25",
+        "cvv": "330",
+        "otp": "342678"
+    }
+]
+
+
